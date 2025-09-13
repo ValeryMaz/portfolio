@@ -1,0 +1,134 @@
+.hero-main-header {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.name-span {
+  font-weight: 800;
+}
+
+.hero-links-wrap {
+  display: none;
+}
+.hero-desc-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #5e5e67;
+  margin-bottom: 32px;
+}
+
+.hero-section {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.hero-img-wrap {
+  background-image: url("../img/hero/column.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 342px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-img-wrap {
+    background-image: url("../img/hero/column@2x.png");
+  }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-img-wrap {
+    background-image: url("../img/hero/Banner@2x.png");
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-main-header::before {
+    display: none;
+  }
+
+  .hero-main-header {
+    font-weight: 400;
+    font-size: 38px;
+  }
+
+  .hero-img-wrap {
+    background-image: url("../img/hero/Banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+  }
+
+  .hero-headers-wrapper {
+    max-width: 600px;
+  }
+
+  .hero-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-main-header {
+    font-size: 48px;
+  }
+
+  .hero-img-wrap {
+    height: 500px;
+    width: 50%;
+    background-size: contain;
+  }
+
+  .hero-links-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+  }
+
+  .hero-container {
+    max-width: 1440px;
+    flex-direction: row;
+    padding-top: 60px;
+  }
+
+  .git-btn {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .git-btn:hover {
+    transform: scale(1.3);
+  }
+
+  .linkedin-btn {
+    display: block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .linkedin-btn:hover {
+    transform: scale(1.3);
+  }
+
+  .hero-headers-wrapper {
+    padding-top: 115px;
+  }
+
+  .hero-desc-header {
+    margin-bottom: 45px;
+  }
+}

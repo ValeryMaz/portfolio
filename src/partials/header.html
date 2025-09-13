@@ -1,19 +1,76 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+  <div class="header-container container">
+    <nav class="header-nav-logo">
+      <a class="header-logo" href="../index.html"
+        ><svg class="header-logo-icon" width="40" height="40">
+          <use href="../img/sprite/sprite.svg#icon-logo-1"></use>
         </svg>
+        <p class="logo-text">VM</p>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
     </nav>
+    <ul class="header-nav-list visually-hidden">
+      <li class="link header-nav-item"><a href="#skills">Skills</a></li>
+      <li class="link header-nav-item"><a href="#projects">My projects</a></li>
+      <li class="link header-nav-item"><a href="#about-me">About me</a></li>
+      <li class="link header-nav-item"><a href="#contact-me">Contact me</a></li>
+      <li class="link header-nav-item resume-link">
+        <a
+          href="/Valeriia_Mazhytova_Frontend_Developer.pdf"
+          download="Valeriia_Mazhytova_Resume.pdf"
+          class="download-btn"
+          >Resume
+          <svg class="nav-icon-download" width="25" height="25">
+            <use
+              href="../img/sprite/sprite.svg#icon-download-svgrepo-com-1"
+            ></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button type="button" class="mobile-menu-open-btn" aria-label="Toggle menu">
+      <svg class="mobile-menu-open-icon" width="36" height="36">
+        <use
+          href="../img/sprite/sprite.svg#icon-burger-menu-svgrepo-com-1"
+        ></use>
+      </svg>
+    </button>
+  </div>
+  <!-- mob menu-->
+  <div class="mobile-menu">
+    <div class="mobile-menu-container container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="mobile-menu-close-icon" width="36" height="36">
+          <use
+            href="../img/sprite/sprite.svg#icon-burger-menu-svgrepo-com-1"
+          ></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-nav-wrapper">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#intro">Intro</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#skills">Skills</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#projects"
+                >My projects</a
+              >
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#about-me">About me</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#contact-me"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

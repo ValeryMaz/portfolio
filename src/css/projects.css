@@ -1,0 +1,21 @@
+.projects-section {
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projects-header {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.projects-span {
+  font-weight: 800;
+}
