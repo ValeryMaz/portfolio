@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href="./public/favicon-j.svg" /> -->
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/portfolio/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BI-BmKyr.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-container container">
+    <nav class="header-nav-logo">
+      <a class="header-logo" href="../index.html"
+        ><svg class="header-logo-icon" width="40" height="40">
+          <use href="../img/sprite/sprite.svg#icon-logo-1"></use>
+        </svg>
+        <p class="logo-text">VM</p>
+      </a>
+    </nav>
+    <ul class="header-nav-list visually-hidden">
+      <li class="link header-nav-item"><a href="#skills">Skills</a></li>
+      <li class="link header-nav-item"><a href="#projects">My projects</a></li>
+      <li class="link header-nav-item"><a href="#about-me">About me</a></li>
+      <li class="link header-nav-item"><a href="#contact-me">Contact me</a></li>
+      <li class="link header-nav-item resume-link">
+        <a
+          href="/Valeriia_Mazhytova_Frontend_Developer.pdf"
+          download="Valeriia_Mazhytova_Resume.pdf"
+          class="download-btn"
+          >Resume
+          <svg class="nav-icon-download" width="25" height="25">
+            <use
+              href="../img/sprite/sprite.svg#icon-download-svgrepo-com-1"
+            ></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <button type="button" class="mobile-menu-open-btn" aria-label="Toggle menu">
+      <svg class="mobile-menu-open-icon" width="36" height="36">
+        <use
+          href="../img/sprite/sprite.svg#icon-burger-menu-svgrepo-com-1"
+        ></use>
+      </svg>
+    </button>
+  </div>
+  <!-- mob menu-->
+  <div class="mobile-menu">
+    <div class="mobile-menu-container container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="mobile-menu-close-icon" width="36" height="36">
+          <use
+            href="../img/sprite/sprite.svg#icon-burger-menu-svgrepo-com-1"
+          ></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-nav-wrapper">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#intro">Intro</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#skills">Skills</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#projects"
+                >My projects</a
+              >
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#about-me">About me</a>
+            </li>
+            <li class="mobile-nav-list-item">
+              <a class="mobile-nav-list-item-link" href="#contact-me"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="hero-section" id="intro">
+  <div class="hero-container container">
+    <div class="hero-headers-wrapper">
+      <h1 class="hero-main-header">
+        Hello! I am <span class="name-span">Valeriia</span>.
+      </h1>
+      <h2 class="hero-desc-header">
+        I am a results-oriented Frontend Developer with a strong foundation in
+        modern web technologies: HTML, CSS, JavaScript, React, TypeScript, and
+        Next.js. Completed training and developed several projects demonstrating
+        skills in component-based development, routing, state management, API
+        integration, and responsive design. A fast learner, detail-oriented, and
+        motivated to apply knowledge to real-world projects while continuously
+        growing as a developer.
+      </h2>
+      <div class="hero-links-wrap">
+        <a
+          href="https://github.com/ValeryMaz"
+          class="git-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="git-icon" width="50" height="50">
+            <use href="../img/sprite/sprite.svg#icon-github-svgrepo-com"></use>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/valeriia-mazhytova/"
+          class="linkedin-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="linkeding-icon" width="50" height="50">
+            <use
+              href="../img/sprite/sprite.svg#icon-linkedin-1-svgrepo-com"
+            ></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-img-wrap"></div>
+  </div>
+</section>
+
+      <section class="skills-section" id="skills">
+  <div class="skills-container container">
+    <h2 class="skills-header">My <span class="skills-span">Skills</span></h2>
+    <div class="skills-icons-container>">
+      <ul class="icons-skills-list">
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use
+              href="../img/sprite/sprite.svg#icon-html5-01-svgrepo-com"
+            ></use>
+          </svg>
+          <p class="skills-item-text">HTML5</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use href="../img/sprite/sprite.svg#icon-css3-01-svgrepo-com"></use>
+          </svg>
+          <p class="skills-item-text">CSS3</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use href="../img/sprite/sprite.svg#icon-js-svgrepo-com"></use>
+          </svg>
+          <p class="skills-item-text">JavaScript</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use href="../img/sprite/sprite.svg#icon-react-svgrepo-com"></use>
+          </svg>
+          <p class="skills-item-text">React</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use
+              href="../img/sprite/sprite.svg#icon-next-dot-js-svgrepo-com"
+            ></use>
+          </svg>
+          <p class="skills-item-text">Next.js</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use
+              href="../img/sprite/sprite.svg#icon-typescript-official-svgrepo-com"
+            ></use>
+          </svg>
+          <p class="skills-item-text">TypeScript</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use href="../img/sprite/sprite.svg#icon-github-svgrepo-com"></use>
+          </svg>
+          <p class="skills-item-text">GitHub</p>
+        </li>
+        <li class="skills-icon-item">
+          <svg class="skills-icon" width="56" height="56">
+            <use href="../img/sprite/sprite.svg#icon-figma-svgrepo-com"></use>
+          </svg>
+          <p class="skills-item-text">Figma</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- <img
+  srcset="../img/projectsPrev/project1.jpg 1x, ../img/projectsPrev/project1-2x.jpg 2x"
+  src=".../img/projectsPrev/project1.jpg"
+  width="264"
+  alt="Preview of the first project"
+/> -->
+
+<section class="projects-section">
+  <div class="projects-container container">
+    <h2 class="projects-header">
+      My <span class="projects-span">Projects</span>
+    </h2>
+  </div>
+</section>
+
+      
+      
+      
+    </main>
+
+    <!-- use strict, import export -->
+  </body>
+</html>
