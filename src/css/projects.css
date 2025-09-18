@@ -194,7 +194,6 @@
   margin-bottom: 32px;
 }
 
-/* TABLET */
 @media only screen and (min-width: 768px) {
   .projects-section {
     padding-bottom: 96px;
@@ -248,7 +247,6 @@
   }
 }
 
-/* DESKTOP */
 @media only screen and (min-width: 1440px) {
   .projects-section {
     padding-bottom: 164px;
