@@ -7,7 +7,7 @@
 .projects-section {
   background-color: #000;
   padding-top: 50px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
 }
 
 .projects-header-right {
@@ -42,7 +42,7 @@
   letter-spacing: -0.02em;
   color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .projects-span {
@@ -196,7 +196,7 @@
 
 @media only screen and (min-width: 768px) {
   .projects-section {
-    padding-bottom: 96px;
+    padding-bottom: 50px;
   }
 
   .container-projects-right {
@@ -248,10 +248,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .projects-section {
-    padding-bottom: 164px;
-  }
-
   .projects-desc-right {
     font-weight: 400;
     font-size: 18px;

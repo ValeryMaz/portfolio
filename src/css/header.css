@@ -90,6 +90,22 @@
     display: none;
   }
 
+  .header-logo {
+    transition: fill 0.3s ease;
+  }
+
+  .header-logo:hover {
+    fill: #5e5e67;
+  }
+
+  .logo-text {
+    transition: color 0.3s ease;
+  }
+
+  .logo-text:hover {
+    color: #5e5e67;
+  }
+
   .nav-icon-download {
     fill: #fff;
     display: block;
