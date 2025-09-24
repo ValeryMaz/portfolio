@@ -1,0 +1,187 @@
+.contact-me-section {
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-me-form input {
+  padding: 18px 24px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #71717a;
+}
+
+.contact-me-form textarea {
+  width: 100%;
+  padding: 18px 24px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  resize: none;
+  min-height: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #71717a;
+}
+
+.contact-me-form input:hover,
+.contact-me-form input:focus,
+.contact-me-form textarea:hover,
+.contact-me-form textarea:focus {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px 5px rgba(113, 113, 122, 0.4);
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-container {
+  max-width: 320px;
+}
+
+.contact-me-info-container {
+  max-width: 320px;
+}
+
+.contact-me-header {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.contact-me-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #71717a;
+  margin-bottom: 32px;
+}
+
+.contact-me-email {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.contact-me-submit-btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 16px 20px;
+  background-color: transparent;
+  width: 173px;
+  transition: color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-me-submit-btn:hover,
+.contact-me-submit-btn:focus {
+  box-shadow: 0 0 10px 5px rgba(113, 113, 122, 0.4);
+  color: #71717a;
+}
+
+.contact-me-icons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  padding-top: 20px;
+}
+
+.contact-me-git-icon path {
+  fill: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-me-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .form-container {
+    max-width: 343px;
+  }
+
+  .contact-me-info-container {
+    max-width: 343px;
+  }
+
+  .contact-me-header {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact-me-container {
+    display: flex;
+    flex-direction: row;
+    gap: 108px;
+  }
+
+  .form-container {
+    min-width: 500px;
+  }
+
+  .contact-me-info-container {
+    max-width: 608px;
+  }
+
+  .contact-me-header {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .contact-me-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #71717a;
+    margin-bottom: 40px;
+  }
+
+  .contact-me-email {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+}

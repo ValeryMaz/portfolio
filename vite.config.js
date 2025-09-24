@@ -55,10 +55,17 @@ import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'; // Для инъекции CSS
 
-export default defineConfig(({ command }) => {
+import { loadEnv } from 'vite';
+
+export default defineConfig(({ command, mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
   return {
     base: '/portfolio/',
     define: {
+      'process.env': {
+        ...env,
+        NODE_ENV: JSON.stringify(mode),
+      },
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',

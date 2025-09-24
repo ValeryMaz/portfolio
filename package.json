@@ -23,6 +23,9 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "swiper": "^12.0.1"
+    "@emailjs/browser": "^4.4.1",
+    "dotenv": "^17.2.2",
+    "swiper": "^12.0.1",
+    "yup": "^1.7.0"
   }
 }
