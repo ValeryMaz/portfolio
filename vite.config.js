@@ -69,6 +69,7 @@ export default defineConfig(({ command, mode }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
+    publicDir: '../public',
     build: {
       sourcemap: true,
       rollupOptions: {
@@ -76,7 +77,6 @@ export default defineConfig(({ command, mode }) => {
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
-              // Исключаем Swiper из разбиения
               if (!id.includes('swiper')) {
                 return 'vendor';
               }
@@ -107,7 +107,7 @@ export default defineConfig(({ command, mode }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      cssInjectedByJsPlugin(), // Инъекция CSS в JS
+      cssInjectedByJsPlugin(),
     ],
     optimizeDeps: {
       include: [

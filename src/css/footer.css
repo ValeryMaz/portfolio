@@ -1,21 +1,102 @@
-.footer {
-  padding: 20px 0;
+.footer-section {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-.footer-desc {
-  text-align: center;
+
+.footer-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #000;
 }
-.footer-link {
-  position: relative;
+
+.footer-logo-text {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .footer-text {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .footer-logo-text {
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer-section {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .footer-text {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .footer-logo-text {
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
