@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 const userSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
   emailForm: Yup.string().email('Invalid email').required('Email is required'),
-  url: Yup.string().email('Must be a valid email address').nullable(),
+  url: Yup.string().url('Must be a valid url address').nullable(),
   textForm: Yup.string().nullable(),
 });
 
