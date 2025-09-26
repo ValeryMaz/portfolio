@@ -12,8 +12,10 @@ export function initScrollToTop() {
     }
   };
 
-  window.topFunction = function () {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For chrome, firefox, ie and opera
-  };
+  mybutton.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Плавная анимация прокрутки
+    });
+  });
 }

@@ -1,14 +1,14 @@
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: 30px;
   z-index: 99;
   outline: none;
   background-color: transparent;
   border: 1.5px solid #5e5e67;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px;
   font-size: 10px;
   transition: box-shadow 0.3s ease;
